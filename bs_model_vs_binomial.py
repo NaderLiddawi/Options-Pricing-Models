@@ -8,11 +8,11 @@ def black_scholes_call(S, K, T, r, sigma):
     Calculate the price of a European call option using the Black-Scholes formula.
 
     Parameters:
-    S (float): Current stock price
-    K (float): Strike price
-    T (float): Time to maturity in years
-    r (float): Risk-free interest rate
-    sigma (float): Volatility of the stock
+    S: Current stock price
+    K: Strike price
+    T: Time to maturity in years
+    r: Risk-free interest rate
+    sigma: Volatility of the stock
 
     Returns:
     float: European call option price
@@ -29,12 +29,12 @@ def binomial_call(S, K, T, r, sigma, N):
     Calculate the price of a European call option using a binomial tree model.
 
     Parameters:
-    S (float): Current stock price
-    K (float): Strike price
-    T (float): Time to maturity in years
-    r (float): Risk-free interest rate
-    sigma (float): Volatility of the stock
-    N (int): Number of periods
+    S: Current stock price
+    K: Strike price
+    T: Time to maturity in years
+    r: Risk-free interest rate
+    sigma: Volatility of the stock
+    N: Number of periods
 
     Returns:
     float: European call option price
@@ -59,8 +59,8 @@ def binomial_call(S, K, T, r, sigma, N):
 S = 125  # Current stock price
 K = 100  # Strike price
 T = 1  # Time to maturity in years
-r = 0.05  # Risk-free interest rate (seems to have big effect on price
-sigma = 0.32  # Volatility of the stock   (seems to have big effect on price
+r = 0.05  # Risk-free interest rate (seems to have big effect on price)
+sigma = 0.32  # Volatility of the stock   (seems to have big effect on price)
 N = 10000  # Number of steps for binomial model
 
 # Calculate Call Option Prices
